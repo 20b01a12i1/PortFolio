@@ -1,0 +1,271 @@
+/* Additional CSS Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    transition: background-color 0.3s;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Updated Navbar Style with Animations */
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    color: #ffc107;
+    transform: scale(1.1);
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Updated Styles for Projects Section */
+.project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.2s;
+    position: relative;
+
+}
+
+.project:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    background-color: rgb(125, 120, 114);
+    color: #f2f2f2;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.project a{
+    text-decoration: none;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    right: 100px; /* Adjust as needed for positioning */
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.project:hover .tooltip {
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+
+
+/* Style the contact email link */
+#contact a {
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+#contact a:hover {
+    color: #0056b3;
+}
+
+header:hover {
+    background-color: #222;
+}
+
+section:hover {
+    background-color: #f9f9f9;
+}
+
+/* ... social icons... */
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Updated Styles with Hover Modal Effect */
+.about-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.about-modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s;
+    overflow: hidden;
+}
+
+.about-container:hover .about-modal {
+    display: block;
+    opacity: 1;
+}
+
+.about-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.about-modal p {
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+.about-modal ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-modal li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Updated Styles for Skills Section with Animations */
+section#skills {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+section#skills:hover {
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+section#skills h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.skill:hover {
+    background-color: #b07123;
+    transform: scale(1.05);
+    transition: background-color 0.5s, transform 0.8s;
+}
+
+/* Background Color Animation */
+body {
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #007BFF;
+    }
+    100% {
+        background-color: #FF5733;
+    }
+}
