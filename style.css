@@ -116,18 +116,49 @@ footer {
 }
 
 
+/* Updated Contact Me Section Styles */
+section#contact {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
 
-/* Style the contact email link */
-#contact a {
+section#contact:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+section#contact h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+section#contact:hover h2 {
+    color: #007BFF;
+}
+
+section#contact p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+section#contact a {
+    text-decoration: none;
     color: #007BFF;
     font-weight: bold;
-    font-size: 1.2em;
-    text-decoration: underline;
+    transition: color 0.3s;
 }
 
-#contact a:hover {
+section#contact a:hover {
     color: #0056b3;
 }
+
 
 header:hover {
     background-color: #222;
@@ -199,14 +230,26 @@ section:hover {
     margin: 20px;
 }
 
+.about-content a {
+    text-decoration: none;
+
+}
+
 .about-modal ul {
     list-style-type: none;
     padding: 0;
+    
+}
+
+.about-content a:hover{
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    color: rgb(213, 140, 62);
 }
 
 .about-modal li {
     font-size: 1.1em;
     margin: 10px 0;
+    border: block;
 }
 
 /* Updated Styles for Skills Section with Animations */
@@ -242,7 +285,7 @@ section#skills h2 {
     display: inline-block;
     margin: 0 10px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #294a6e;
     color: #fff;
     border-radius: 20px;
     font-weight: bold;
@@ -256,16 +299,4 @@ section#skills h2 {
     transition: background-color 0.5s, transform 0.8s;
 }
 
-/* Background Color Animation */
-body {
-    animation: backgroundAnimation 10s infinite alternate;
-}
 
-@keyframes backgroundAnimation {
-    0% {
-        background-color: #007BFF;
-    }
-    100% {
-        background-color: #FF5733;
-    }
-}
