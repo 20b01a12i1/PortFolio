@@ -40,12 +40,13 @@ nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.0em;
     transition: color 0.3s, transform 0.2s;
 }
 
 nav a:hover {
-    color: #ffc107;
+    font-weight: bold;
+    font-size: 1.5em;
     transform: scale(1.1);
 }
 
@@ -138,9 +139,6 @@ section#contact h2 {
     transition: color 0.3s;
 }
 
-section#contact:hover h2 {
-    color: #007BFF;
-}
 
 section#contact p {
     font-size: 1.1em;
